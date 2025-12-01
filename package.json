@@ -2,11 +2,11 @@
   "name": "email-connector-app",
   "version": "1.0.0",
   "description": "email connector",
-  "main": "dist/app.js",
+  "main": "dist/server.js",
   "type": "module",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "start": "node dist/app.js",
+    "start": "node dist/server.js",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
