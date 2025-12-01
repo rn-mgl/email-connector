@@ -3,8 +3,8 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 
-import emailRouter from "@/routers/email-router";
-import { errorHandler } from "@/middlewares/error-middleware";
+import emailRouter from "@/routers/email-router.ts";
+import { errorHandler } from "@/middlewares/error-middleware.ts";
 
 const app = express();
 

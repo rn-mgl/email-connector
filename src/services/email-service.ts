@@ -1,4 +1,4 @@
-import { getTransportConfig } from "@/utils/email-utils";
+import { getTransportConfig } from "@/utils/email-utils.ts";
 import nodemailer, { type Transporter } from "nodemailer";
 
 let transporter: Transporter | null = null;
