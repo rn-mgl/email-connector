@@ -38,17 +38,17 @@ export const validateEnvelope = (envelope: unknown): EnvelopeContent => {
     !("to" in envelope) ||
     !("subject" in envelope) ||
     !("source" in envelope) ||
-    !("body" in envelope)
+    !("html" in envelope)
   ) {
     throw new AppError(
-      `Invalid parameters given. Ensure 'to', 'source', 'subject', 'body' are set.`
+      `Invalid parameters given. Ensure 'to', 'source', 'subject', 'html' are set.`
     );
   }
 
   const to = envelope?.to;
   const source = envelope?.source;
   const subject = envelope?.subject;
-  const body = envelope?.body;
+  const html = envelope?.html;
 
   if (
     typeof to !== "string" ||
@@ -66,8 +66,8 @@ export const validateEnvelope = (envelope: unknown): EnvelopeContent => {
     );
   }
 
-  if (typeof body !== "string") {
-    throw new AppError(`Invalid parameters given. Ensure 'body' is a string.`);
+  if (typeof html !== "string") {
+    throw new AppError(`Invalid parameters given. Ensure 'html' is a string.`);
   }
 
   if (typeof source !== "string") {
@@ -85,7 +85,7 @@ export const validateEnvelope = (envelope: unknown): EnvelopeContent => {
   return {
     to,
     subject,
-    html: body,
+    html,
     from: "no-reply@rltn.space",
   };
 };
