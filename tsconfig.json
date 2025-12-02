@@ -33,7 +33,7 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
