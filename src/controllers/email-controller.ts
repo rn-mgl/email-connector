@@ -1,5 +1,5 @@
-import { getTransporter } from "../services/email-service.ts";
-import { validateEnvelope } from "../utils/email-utils.ts";
+import { getTransporter } from "../services/email-service.js";
+import { validateEnvelope } from "../utils/email-utils.js";
 import { response, type Request, type Response } from "express";
 
 export const handleEmail = async (req: Request, res: Response) => {
