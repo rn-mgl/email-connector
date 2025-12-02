@@ -12,5 +12,5 @@ export interface EnvelopeContent {
   to: string | string[];
   from: string;
   subject: string;
-  body: string;
+  html: string;
 }

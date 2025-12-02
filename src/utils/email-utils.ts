@@ -85,7 +85,7 @@ export const validateEnvelope = (envelope: unknown): EnvelopeContent => {
   return {
     to,
     subject,
-    body,
+    html: body,
     from: "no-reply@rltn.space",
   };
 };
