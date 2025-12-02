@@ -5,6 +5,8 @@
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
     "target": "es2024",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "moduleResolution": "bundler",
     "types": [],
     // For nodejs:
@@ -29,16 +31,9 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "noEmit": true,
     "allowImportingTsExtensions": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"],
-      "@/controllers/*": ["controllers/*"],
-      "@/routers/*": ["routers/*"],
-      "@/middlewares/*": ["middlewares/*"]
-    }
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

@@ -1,8 +1,8 @@
-import AppError from "@/errors/AppError.ts";
+import AppError from "../errors/AppError.ts";
 import type {
   EnvelopeContent,
   TransportConfig,
-} from "@/interfaces/email-interface.ts";
+} from "../interfaces/email-interface.ts";
 
 export const getTransportConfig = (): TransportConfig => {
   const host = process.env.SMTP_HOST;
