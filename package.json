@@ -27,21 +27,5 @@
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
-  },
-  "tsup": {
-    "entry": [
-      "src/server.ts"
-    ],
-    "outDir": "dist",
-    "format": [
-      "esm"
-    ],
-    "target": "es2024",
-    "sourcemap": true,
-    "clean": true,
-    "dts": true,
-    "splitting": false,
-    "skipNodeModulesBundle": true,
-    "tsconfig": "./tsconfig.json"
   }
 }
