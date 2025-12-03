@@ -41,6 +41,11 @@
     "clean": true,
     "dts": true,
     "splitting": false,
-    "skipNodeModulesBundle": true
+    "skipNodeModulesBundle": true,
+    "tsconfigResolvePaths": {
+      "@/": [
+        "src/"
+      ]
+    }
   }
 }
