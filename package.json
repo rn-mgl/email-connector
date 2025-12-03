@@ -43,8 +43,8 @@
     "splitting": false,
     "skipNodeModulesBundle": true,
     "tsconfigResolvePaths": {
-      "@/": [
-        "src/"
+      "@/*": [
+        "./src/"
       ]
     }
   }
