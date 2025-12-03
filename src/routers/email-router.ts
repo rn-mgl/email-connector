@@ -1,4 +1,4 @@
-import { handleEmail } from "../controllers/email-controller.js";
+import { handleEmail } from "@/controllers/email-controller";
 import express from "express";
 
 const router = express.Router();
