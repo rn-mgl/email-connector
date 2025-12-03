@@ -44,7 +44,7 @@
     "skipNodeModulesBundle": true,
     "tsconfigResolvePaths": {
       "@/": [
-        "src/"
+        "./src/"
       ]
     }
   }
