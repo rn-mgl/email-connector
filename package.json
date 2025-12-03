@@ -42,6 +42,6 @@
     "dts": true,
     "splitting": false,
     "skipNodeModulesBundle": true,
-    "tsconfig": "tsconfig.json"
+    "tsconfig": "./tsconfig.json"
   }
 }
