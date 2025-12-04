@@ -4,11 +4,8 @@
   "description": "email connector",
   "main": "dist/server.js",
   "type": "module",
-  "imports": {
-    "@/": "./src/"
-  },
   "scripts": {
-    "build": "tsup",
+    "build": "node esbuild.config.js",
     "start": "node dist/server.js",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,8 +23,8 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/nodemailer": "^7.0.4",
+    "esbuild": "^0.27.1",
     "nodemon": "^3.1.11",
-    "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
