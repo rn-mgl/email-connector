@@ -4,6 +4,9 @@
   "description": "email connector",
   "main": "dist/server.js",
   "type": "module",
+  "imports": {
+    "@/": "./src/"
+  },
   "scripts": {
     "build": "tsup",
     "start": "node dist/server.js",
