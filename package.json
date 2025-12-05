@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "start": "ls - l && node dist/server.js",
+    "start": "ls -l && node dist/server.js",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
