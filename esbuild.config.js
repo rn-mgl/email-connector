@@ -7,11 +7,11 @@ build({
   bundle: true,
   platform: "node",
   target: "node18",
-  sourcemap: true,
   format: "esm",
-  external: [],
 
   alias: {
-    "@": path.resolve(process.cwd(), "src"),
+    "@": path.resolve(__dirname, "src"),
   },
-});
+
+  sourcemap: true,
+}).catch(() => process.exit(1));
